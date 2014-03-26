@@ -1,0 +1,41 @@
+body {
+  font-family: "homizio";
+  font-size: 20px;
+  line-height: 1.428571429;
+  color: #54839C;
+  background-color: #3D3D3D;
+}
+
+.carousel-inner .item img{
+   margin:0 auto; 
+ } 
+
+ .carousel-indicators {
+ 	bottom:-7px;
+ 	margin-left: 5%;
+ }
+ 
+.carousel-inner > .item
+{
+	height: 350px;
+}
+
+.box {
+	width: 100%;
+}
+
+.leftcolumn {
+	float: left;
+	width: 50%;
+	padding-right: 10px;
+}
+
+.rightcolumn {
+	float: right;
+	width:50%;
+}
+
+@font-face {
+   font-family: 'homizio';
+   src: url('../fonts/homizio.ttf');
+}

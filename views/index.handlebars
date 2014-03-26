@@ -5,9 +5,18 @@
 	<title>HCI Project Portfolio</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
 	<link href="/css/introHCI.css" rel="stylesheet">
+	<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/css/project.css" rel="stylesheet">
+	<script type="text/javascript">
+	$(document).ready(function() {
+	    $('.carousel').each(function(){
+	        $(this).carousel('cycle');
+	    });
+	});​
+	</script>
 	<!-- this is a comment in HTML -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -23,52 +32,133 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			<h1>Judy Lin</h1>
+			<!--<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p> -->
 		</div>
 
 		<h4>Projects</h4>
 		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
 		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
 		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		{{#each projects}}
+	<!--	{{#each projects}}
 		<div class="project" id="project{{id}}">
 			<div class="thumbnail">
-				<a href="#">
-					<img src="{{image}}" alt="Lorem Pixel image" class="img project-img">
-					<p>{{title}}</p>
+				<a href="#"> -->
+					<!--<img src="{{image}}" alt="Lorem Pixel image" class="img project-img">-->
+				<!--	<p>{{title}}</p>
 				</a>
 				<div class="details"></div>
 			</div>
 		</div>
-		{{/each}}
+		{{/each}} -->
 
 	<hr />
-
-	<form id="new-project-form" role="form">
-    <div class="form-group">
-      <label for="title">Title for New Project:</label>
-      <input type="text" class="form-control" id="title" placeholder="Project Name">
-    </div>
-    <div class="form-group">
-      <label for="image_url">Project image URL</label>
-      <input type="text" class="form-control" id="image_url" placeholder="http://www.example.com/really_cool_image.jpg">
-    </div>
-    <div class="form-group">
-      <label for="date">Date</label>
-      <input type="text" class="form-control" id="date" placeholder="January 1">
-    </div>
-    <div class="form-group">
-      <label for="summary">Summary</label>
-      <textarea type="text" class="form-control" id="summary" rows="3" placeholder="Wow, Very Project!  So much summary!"></textarea>
-    </div>
-    <button id="newProjectSubmitButton" type="button" class="btn btn-default">Submit</button>
-  </form>
+	<div class="box">
+		<div class="leftcolumn">
+			<h1>MyCloset Mobile Web App</h1>
+			<p>(Heroku, HTML, CSS, Javascript, MongoDB, Node.js)</p>
+			<p>MyCloset focuses on providing users a way to quickly filter excess information when choosing what clothes to wear or buy by giving users a virtual “closet” to store and compare clothing items</p>
+			<p>&middot; Improved User Interface Design with protyping, Heuristic Evaluations<br>&middot; Implemented User Interface Design with HTML, CSS, Javascript<br>&middot; Integrated MongoDB as database for storing user data<br>&middot; Built on Node.js and hosted on Heroku 
+			</p>
+			<p>Link: mycloset.herokuapp.com</p>
+			<p>
+			</p>
+		</div>
+		<div class="rightcolumn">
+			<div id="myCarousel" class="carousel slide">
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			    <li data-target="#myCarousel" data-slide-to="4"></li>
+			    <li data-target="#myCarousel" data-slide-to="5"></li>
+			    <li data-target="#myCarousel" data-slide-to="6"></li>
+			    <li data-target="#myCarousel" data-slide-to="7"></li>
+			    <li data-target="#myCarousel" data-slide-to="8"></li>
+			  </ol>
+			  <!-- Carousel items -->
+			  <div class="carousel-inner">
+			    <div class="active item"><img src="../images/slide.png"></img></div>
+			    <div class="item">
+			    	<iframe width="560" height="315" src="//www.youtube.com/embed/JJSVZbvyTdE" frameborder="0" allowfullscreen></iframe></div>
+			    <div class="item"><img src="../images/snap.jpg"></img></div>
+			    <div class="item"><img src="../images/upload.jpg"></img></div>
+			    <div class="item"><img src="../images/itemadded.jpg"></img></div>
+			    <div class="item"><img src="../images/mycloset.jpg"></img></div>
+			    <div class="item"><img src="../images/createoutfit.jpg"></img></div>
+			    <div class="item"><img src="../images/outfitcreated.jpg"></img></div>
+			    <div class="item"><img src="../images/share.jpg"></img></div>
+			  </div>
+			  <!-- Carousel nav -->
+			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+			  <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+			</div>
+		</div>
+	</div>
+	</div> <!--close box div -->
+	<div class="container">
+	<hr />
+	<div class="box">
+		<div class="leftcolumn">
+			<h1>UCEvents Android App</h1>
+			<p>(Heroku, HTML, CSS, Javascript, MongoDB, Node.js)</p>
+			<p>MyCloset focuses on providing users a way to quickly filter excess information when choosing what clothes to wear or buy by giving users a virtual “closet” to store and compare clothing items</p>
+			<p>&middot; Improved User Interface Design with protyping, Heuristic Evaluations<br>&middot; Implemented User Interface Design with HTML, CSS, Javascript<br>&middot; Integrated MongoDB as database for storing user data<br>&middot; Built on Node.js and hosted on Heroku 
+			</p>
+			<p>Link: mycloset.herokuapp.com</p>
+			<p>
+			</p>
+		</div>
+		<div class="rightcolumn">
+			<div id="myCarousel2" class="carousel slide">
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel2" data-slide-to="1"></li>
+			    <li data-target="#myCarousel2" data-slide-to="2"></li>
+			    <li data-target="#myCarousel2" data-slide-to="3"></li>
+			    <li data-target="#myCarousel2" data-slide-to="4"></li>
+			    <li data-target="#myCarousel2" data-slide-to="5"></li>
+			    <li data-target="#myCarousel2" data-slide-to="6"></li>
+			    <li data-target="#myCarousel2" data-slide-to="7"></li>
+			    <li data-target="#myCarousel2" data-slide-to="8"></li>
+			  </ol>
+			  <!-- Carousel items -->
+			  <div class="carousel-inner">
+			  	<div class="active item">
+			    	<iframe width="560" height="315" src="//www.youtube.com/embed/lV1qwChiwU8" frameborder="0" allowfullscreen></iframe></div>
+			    <div class="item"><img src="../images/ucevents/login.jpg"></img></div>
+			    <div class="item"><img src="../images/ucevents/profile.jpg"></img></div>
+			    <div class="item"><img src="../images/ucevents/events.jpg"></img></div>
+			    <div class="item"><img src="../images/ucevents/category.jpg"></img></div>
+			    <div class="item"><img src="../images/ucevents/eventlist.jpg"></img></div>
+			  	<div class="item"><img src="../images/ucevents/schedule.jpg"></img></div>
+			    <div class="item"><img src="../images/ucevents/eventcreated.jpg"></img></div>
+			    <div class="item"><img src="../images/ucevents/editevent.jpg"></img></div>
+			  </div>
+			  <!-- Carousel nav -->
+			  <a class="carousel-control left" href="#myCarousel2" data-slide="prev">‹</a>
+			  <a class="carousel-control right" href="#myCarousel2" data-slide="next">›</a>
+			</div>
+		</div>
+	</div> <!--close box div -->
 
 	</div>
+	<script> 
+		//$('.carousel').carousel( 'cycle');
+		$('#myCarousel').hover(function () {   
+  				$(this).carousel('pause')   
+		}; 
 
+	 </script>
+	 <script>
+	 	$('#myCarousel2').hover(function () {   
+  				$(this).carousel('pause')   
+		}; 
+	 </script>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap.js"></script>
 	<script src="/js/introHCI.js"></script>
 </body>
 </html>
