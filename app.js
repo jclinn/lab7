@@ -11,6 +11,7 @@ var mongoose = require('mongoose');
 
 var index = require('./routes/index');
 var project = require('./routes/project');
+var art = require('./routes/art');
 // Example route
 // var user = require('./routes/user');
 
@@ -48,6 +49,9 @@ app.get('/', index.view);
 app.get('/project/:id', project.projectInfo);
 app.post('/project/new', project.addProject);
 app.post('/project/:id/delete', project.deleteProject);
+
+
+app.get('/art', art.view);
 // Example route
 // app.get('/users', user.list);
 
